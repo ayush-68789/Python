@@ -1,0 +1,6 @@
+sen = input("Enter string : ")
+print(sen.find("  "))
+print(len(sen))
+print(sen.count("a"))
+print(sen.capitalize())
+print(sen.replace("  "," "))
