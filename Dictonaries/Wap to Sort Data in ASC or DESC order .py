@@ -26,6 +26,7 @@ print(sort_asc)
 
 
 '''
+Terminal : 
 Enter number of entries : 5
 Enter key : AT
 Enter Value : 32
