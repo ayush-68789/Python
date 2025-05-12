@@ -14,15 +14,17 @@ Sample Output 1
 Not a Strong Number'''
 
 
-n = int(input())
-str = str(n)
+def fact (num):
+    fac = 1 
+    for i in range (1,num+1):
+        fac *= i
+    return fac 
+
+n = input()
 sum = 0 
-prod = 1 
-for i in range(0,len(str)):
-    sum += int(str[i])
-    prod *= int(str[i])
-    
-if sum == prod:
-    print("Spy Number")
+for i in range(0,len(n)):
+    sum += fact(int(n[i]))
+if (sum == int(n)):
+    print("Strong number")
 else :
-    print("Not a Spy Number")
+    print("Not strong number")
