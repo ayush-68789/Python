@@ -1,23 +1,11 @@
-def user(entries) :
-    data = {}
-    for i in range(0,entries):
-        line = input().split()
-        key = line[0]
-        value = list(map(float,line[1:]))
-        data[key] = value
-    return data 
-    
-    
-def main():
-    entries = int(input())
-    result  = user(entries)
-    name = input()
-    if name in result :
-        marks = result[name]
-        avg = sum(marks) / len(marks)
-        print("%.2f" % avg)
+dict = eval(input())
+name = input()
+avg = 0 
+if name in dict :
+    marks  = dict[name]
+    avg = sum(marks)/ len(marks)
+    print("%0.2f" % avg)
 
-main()
 
 
 """
