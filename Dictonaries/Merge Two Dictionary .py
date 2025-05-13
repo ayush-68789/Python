@@ -12,3 +12,12 @@ merge = {}
 merge = dict_1.copy()
 merge.update(dict_2)
 print(merge)
+
+
+
+# OR 
+
+dict_1 = eval(input())
+dict_2 = eval(input())
+dict1.update(dict2)
+print(dict1)
