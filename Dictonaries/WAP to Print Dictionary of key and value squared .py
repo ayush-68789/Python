@@ -6,12 +6,8 @@ Enter entry : 5
 '''
 
 
-def square_dict (entry) :
-    data = {}
-    for i in range(1,entry+1):
-        data[i] = i*i
-    return data
-
-entry = int(input("Enter entry : "))
-result = square_dict(entry)
-print(result)
+dict = {}
+entry = int(input())
+for i in range (1,entry+1) :
+    dict[i] = i*i 
+print(dict)
